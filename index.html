@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi niño hermoso 🤍</title>
+<style>
+  :root{
+    --bg:#fbf5f1;
+    --paper:#fffdfb;
+    --ink:#3b302d;
+    --muted:#806f69;
+    --accent:#a98278;
+    --accent2:#d8b9ad;
+    --line:#eadbd4;
+    --shadow:0 18px 50px rgba(74,50,42,.10);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:linear-gradient(135deg,#fbf5f1,#f7eee9);
+    color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif;
+    min-height:100vh;
+  }
+  button,a{font:inherit}
+  .screen{display:none;min-height:100vh;padding:28px 18px}
+  .screen.active{display:flex;align-items:center;justify-content:center}
+  .card{
+    width:min(720px,100%);
+    background:rgba(255,253,251,.94);
+    border:1px solid var(--line);
+    border-radius:28px;
+    box-shadow:var(--shadow);
+    padding:34px 24px;
+  }
+  .center{text-align:center}
+  .eyebrow{
+    color:var(--accent);
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    font-size:.78rem;
+  }
+  h1,h2{font-weight:500;line-height:1.15}
+  h1{font-size:clamp(2.2rem,8vw,4rem);margin:14px 0}
+  h2{font-size:clamp(1.7rem,6vw,2.6rem);margin:10px 0 24px}
+  p{font-size:1.08rem;line-height:1.85;margin:0 0 16px}
+  .quote{font-style:italic;color:var(--muted);margin:18px auto 28px;max-width:560px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    border:0;border-radius:999px;padding:13px 22px;
+    background:var(--accent);color:white;cursor:pointer;
+    box-shadow:0 8px 22px rgba(111,79,69,.18);
+    text-decoration:none;transition:.2s transform,.2s opacity;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn.secondary{background:#eee1dc;color:var(--ink);box-shadow:none}
+  .actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+  .letters{display:grid;gap:12px;margin-top:22px}
+  .letter-link{
+    width:100%;text-align:left;padding:17px 18px;border:1px solid var(--line);
+    border-radius:18px;background:#fff;color:var(--ink);cursor:pointer;
+    display:flex;gap:13px;align-items:flex-start;
+  }
+  .letter-link:hover{background:#fffaf7}
+  .num{min-width:30px;color:var(--accent);font-weight:bold}
+  .special{
+    margin-top:26px;padding:22px;border:1px solid #dec6bc;border-radius:22px;
+    background:linear-gradient(135deg,#fffaf7,#f7eee9);text-align:center;
+  }
+  .special h3{margin:4px 0 8px;font-size:1.35rem}
+  .letter-body{margin-top:18px}
+  .letter-body p{white-space:pre-line}
+  .signature{text-align:right;margin-top:28px;font-style:italic}
+  .polaroids{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:24px}
+  .polaroid{
+    background:white;padding:10px 10px 16px;border:1px solid #e8ded9;
+    box-shadow:0 10px 24px rgba(70,50,44,.09);transform:rotate(-1deg);
+  }
+  .polaroid:nth-child(even){transform:rotate(1.2deg)}
+  .polaroid .photo{
+    aspect-ratio:1/1;background:#f3ebe6;border-radius:2px;
+    display:flex;align-items:center;justify-content:center;color:#9b8880;
+    overflow:hidden;
+  }
+  .polaroid img{width:100%;height:100%;object-fit:cover}
+  .caption{font-size:.95rem;line-height:1.45;margin-top:10px;text-align:center}
+  .small{font-size:.88rem;color:var(--muted)}
+  .topbar{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:20px}
+  .hidden{display:none!important}
+  @media(max-width:500px){
+    .card{padding:28px 18px;border-radius:22px}
+    p{font-size:1.02rem;line-height:1.75}
+  }
+</style>
+</head>
+<body>
+
+<section id="home" class="screen active">
+  <main class="card center">
+    <div class="eyebrow">Un pequeño pedacito de mi corazón</div>
+    <h1>Para mi niño hermoso 🤍</h1>
+    <p class="quote">“Hecho especialmente para ti.”</p>
+    <button class="btn" onclick="show('welcome')">Abrir 💌</button>
+  </main>
+</section>
+
+<section id="welcome" class="screen">
+  <main class="card">
+    <div class="eyebrow">Carta de bienvenida</div>
+    <h2>Hola, mi niño hermoso 🤍</h2>
+    <div class="letter-body">
+      <p>Esta página es un pequeño pedacito de mi corazón hecho especialmente para ti.</p>
+      <p>Aquí fui guardando palabras, recuerdos, sentimientos y pequeños pedacitos de todo lo que significas para mí.</p>
+      <p>Hay cartas para distintos momentos: para cuando me extrañes, cuando no puedas dormir, cuando necesites que te recuerde lo increíble que eres, cuando quieras reír y para muchos otros momentos en los que quiero estar cerquita de ti aunque la distancia no me deje.</p>
+      <p>Y como quiero que cada carta llegue a ti justo cuando la necesites, tú me pedirás la carta que quieras abrir y yo te mandaré su enlace. 🤍</p>
+    </div>
+    <div class="actions">
+      <button class="btn" onclick="show('list')">Ver mis cartas 💌</button>
+    </div>
+  </main>
+</section>
+
+<section id="list" class="screen">
+  <main class="card">
+    <div class="topbar">
+      <div>
+        <div class="eyebrow">Para ti</div>
+        <h2 style="margin-bottom:0">Mis cartas 💗</h2>
+      </div>
+    </div>
+
+    <div class="letters" id="lettersList"></div>
+
+    <div class="special">
+      <div class="eyebrow">Carta especial</div>
+      <h3>Feliz 2 meses, tesorito 🤍</h3>
+      <p class="small">Esta carta no necesita un enlace especial. Puedes abrirla directamente desde aquí.</p>
+      <button class="btn" onclick="show('twoMonths')">Abrir carta especial 🎁</button>
+    </div>
+  </main>
+</section>
+
+<section id="letter" class="screen">
+  <main class="card">
+    <div class="topbar">
+      <button class="btn secondary" onclick="show('list')">← Volver</button>
+      <span id="letterNumber" class="small"></span>
+    </div>
+    <div class="eyebrow" id="letterEyebrow"></div>
+    <h2 id="letterTitle"></h2>
+    <div id="letterContent" class="letter-body"></div>
+  </main>
+</section>
+
+<section id="twoMonths" class="screen">
+  <main class="card">
+    <div class="topbar">
+      <button class="btn secondary" onclick="show('list')">← Volver</button>
+      <span class="small">Carta especial 🤍</span>
+    </div>
+    <div class="eyebrow">Un día para celebrar</div>
+    <h2>Feliz 2 meses, tesorito 🤍</h2>
+    <div class="letter-body">
+      <p><strong>Feliz 2 meses, tesorito. 🤍</strong></p>
+      <p>Dos meses.</p>
+      <p>Puede parecer poquito tiempo cuando lo miras escrito así, pero cuando pienso en todo lo que ha cabido dentro de estos dos meses, siento que hemos vivido muchísimo.</p>
+      <p>Han sido dos meses de mensajes, llamadas, risas, noches en las que el sueño nos ganó hablando, juegos, momentos bonitos, pequeños desacuerdos, reconciliaciones, planes, sueños y un montón de recuerdos que ahora forman parte de nosotros.</p>
+      <p>Y pensar que todo esto empezó con nosotros estando tan lejos… y aun así conseguiste convertirte en una de las personas más importantes de mi vida.</p>
+      <p><strong>Gracias por estos primeros dos meses, mi niño.</strong></p>
+      <p>Gracias por cada “te quiero”, por cada buenos días, por cada llamada, por cada vez que me has hecho sonreír cuando ni siquiera sabías que lo necesitaba y por cada momento en el que simplemente decidiste quedarte.</p>
+      <p>Me hace mucha ilusión pensar que hoy celebramos nuestro segundo mes, pero todavía más pensar en todos los meses que espero que nos queden.</p>
+      <p>Porque si con solamente dos meses ya tengo tantos recuerdos tuyos que guardar, no quiero imaginar cuántos vamos a tener cuando nuestro contador llegue a un año… o a cinco… o a diez. 🥹</p>
+      <p><strong>Así que feliz segundo mes, mi amor.</strong></p>
+      <p>Gracias por ser tú, por elegirme y por dejarme quererte de esta manera tan intensa, cursi y absolutamente babosa que ya conoces. JAJAJA.</p>
+      <p>Espero que este sea solamente el segundo de muchísimos meses más.</p>
+      <p>Y algún día quiero mirar hacia atrás y pensar:</p>
+      <p><em>“Qué bonito que aquel día, cuando solamente llevábamos dos meses, ya soñábamos con toda una vida juntos.”</em></p>
+      <p>Te amo muchísimo, Daniel.</p>
+      <p><strong>Feliz 2 meses, tesorito. 🤍</strong></p>
+      <p><em>Hoy son dos meses.<br>Mañana serán 61 días.<br>Y algún día espero que dejemos de contar porque sean demasiados para llevar la cuenta.</em> 🥹</p>
+      <p class="signature">Tu cielito,<br>Karla. 🤍</p>
+    </div>
+  </main>
+</section>
+
+<script>
+const letters = {
+  1: {
+    title:"Ábrelo cuando te sientas triste",
+    emoji:"🌧️",
+    content:`
+      <p>Hola tesorito, la verdad no me gustaría que abrieras esta carta, porque no quiero que estés triste, no quiero que esos ojitos color cielo se me depriman...</p>
+      <p>Esta carta ya tiene su versión completa; aquí podemos ir pegando exactamente el texto final que dejamos listo.</p>
+    `
+  },
+  2: {
+    title:"Ábrelo cuando sientas que el mundo es demasiado para ti",
+    emoji:"🌎",
+    content:`
+      <p>Hola corazón, si el mundo está intentando apagarlo, entonces prendámosle fuego para que se apague él.</p>
+      <p>Tienes permitido llorar y desahogarte todo lo que quieras, porque la vida se trata de caerse 20 veces pero levantarse 21...</p>
+    `
+  },
+  3: {
+    title:"Ábrelo cuando me extrañes demasiado",
+    emoji:"💌",
+    content:`
+      <p>Hola precioso, yo pienso en ti 24/7...</p>
+      <p>Te extraño como si siempre hubiéramos estado juntos, aunque nos separen muchísimas millas. Y aun sin tocarnos, llegaste a lo más profundo de mi corazón.</p>
+    `
+  },
+  4: {
+    title:"Ábrelo cuando no te sientas suficiente",
+    emoji:"🫂",
+    content:`
+      <p>Hola mi niño...</p>
+      <p>Aquí va la carta final sobre todo lo que admiro de ti, tus mensajes, llamadas, juegos, descansos y la tranquilidad que me das para ser yo misma.</p>
+    `
+  },
+  5: {
+    title:"Ábrelo cuando quieras saber por qué tú y no alguien más",
+    emoji:"💗",
+    content:`
+      <p>Hola cariñito...</p>
+      <p>Esta carta habla de por qué te elegí, de lo que siento al ser amada por ti y de por qué quiero compartir contigo mis alegrías, mis miedos, mis lágrimas y mi vida.</p>
+    `
+  },
+  6: {
+    title:"Ábrelo cuando discutamos y no lo hayamos solucionado",
+    emoji:"🥺",
+    content:`
+      <p>Hola Dani...</p>
+      <p>Esta carta habla de lo triste que me pone sentir que algo está mal entre nosotros y contiene nuestras reglas para discutir y volver a encontrarnos.</p>
+    `
+  },
+  7: {
+    title:"Ábrelo cuando te sientas solo",
+    emoji:"🫂",
+    content:`
+      <p>Hola lindo...</p>
+      <p>Cuando pienses que no hay nadie en tu equipo, yo estoy aquí animándote con pompones y todo, en la mitad de las gradas gritando tu nombre.</p>
+    `
+  },
+  8: {
+    title:"Ábrelo cuando a veces la distancia te supere",
+    emoji:"✈️",
+    content:`
+      <p>Hola precioso...</p>
+      <p>Todo este tiempo separados va a valer la pena. Haremos nuestros planes, viajaremos por el mundo, iremos a Disney y a Suiza, caminaremos tomados de la mano y construiremos todos esos recuerdos que todavía nos faltan.</p>
+    `
+  },
+  9: {
+    title:"Ábrelo cuando quieras saber qué me gusta de ti",
+    emoji:"💙",
+    content:`
+      <p>Hola cuchurrumiiiiinnnn...</p>
+      <p>Podría decirte tus ojos, tu sonrisa y tu carita preciosa, pero prefiero hablarte de esos pequeños detalles que quizá nunca hayas notado...</p>
+    `
+  },
+  10: {
+    title:"Ábrelo cuando no puedas dormir",
+    emoji:"🌙",
+    content:`
+      <p>Hola, amor.</p>
+      <p>¿Todavía no puedes dormir? Ven, acuéstate. No tienes que hablar si no quieres. Solo me quedaré contigo todo el rato que quieras...</p>
+    `
+  },
+  11: {
+    title:"Ábrelo cuando quieras reír",
+    emoji:"😂",
+    content:`
+      <p>Hoooooolaaaaaa wapooo...</p>
+      <p>¿Recuerdas esa noche que nos quedamos jugando pares o nones? Estábamos demasiado sincronizados. Eso es el poder del amor 😔.</p>
+      <p>Aquí van nuestra sección de chistes y todos esos recuerdos que queremos conservar para hacerte reír.</p>
+    `
+  },
+  12: {
+    title:"Ábrelo cuando estés sobrepensando demasiado",
+    emoji:"🧠",
+    content:`
+      <p>Hola mi niño...</p>
+      <p>Esta carta está hecha para ayudarte a separar lo que sabes de lo que tu cabeza está imaginando y recordarte que puedes respirar, soltar un poquito y hablar conmigo.</p>
+    `
+  },
+  13: {
+    title:"Ábrelo cuando quieras mirar a través de mis ojos",
+    emoji:"📸",
+    polaroids:true,
+    content:`
+      <p>Quiero enseñarte algunas de las cosas que me recuerdan a ti, porque estás escondido en muchísimos rincones de mi vida.</p>
+      <div class="polaroids">
+        <div class="polaroid"><div class="photo">☁️<br>Foto por añadir</div><div class="caption">El cielo siempre será lo que más me recuerda a ti, aunque ningún día se podrá comparar con lo lindo que eres tú.</div></div>
+        <div class="polaroid"><div class="photo">🇨🇭<br>Foto por añadir</div><div class="caption">Segundo destino: Suiza. Algún día conoceremos todos esos lugares que nos interesan.</div></div>
+        <div class="polaroid"><div class="photo">🎶<br>Foto por añadir</div><div class="caption">Cada vez que escucho canciones de amor tu nombre viene a mi cabeza.</div></div>
+        <div class="polaroid"><div class="photo">🫓<br>Foto por añadir</div><div class="caption">Las famosas pupusas que algún día cocinaré para ti, junto a todo mi repertorio de comida.</div></div>
+        <div class="polaroid"><div class="photo">🧸<br>Foto por añadir</div><div class="caption">Nuestra Petunia, nuestra bebé. 🤍</div></div>
+        <div class="polaroid"><div class="photo">💌<br>Foto por añadir</div><div class="caption">Tus mensajes destacados y todos los que todavía me faltaron por poner.</div></div>
+        <div class="polaroid"><div class="photo">✈️<br>Foto por añadir</div><div class="caption">Nuestro lugar de encuentro, donde algún día nuestro “algún día” se convertirá en “hoy”.</div></div>
+        <div class="polaroid"><div class="photo">🎨<br>Foto por añadir</div><div class="caption">Mi musa favorita. Volviste a despertar mis ganas de dibujar.</div></div>
+      </div>
+    `
+  },
+  14: {
+    title:"Ábrelo cuando dudes de ti mismo",
+    emoji:"🥹",
+    content:`
+      <p>Hola hermoso,</p>
+      <p>Primero que nada quiero que sepas que no existe nadie en este mundo que sea tan capaz como tú. Absolutamente nadie.</p>
+      <p>A veces quisiera que pudieras verte con mis ojos, aunque fuera solamente por unos minutos, porque quizás entonces entenderías por qué estoy tan orgullosa de ti.</p>
+      <p>¿Cómo no voy a admirarte después de saber que fuiste capaz de viajar a otro país siendo tan joven y salir adelante? ¿Cómo no voy a hacerlo después de saber que trabajaste y estudiaste al mismo tiempo, que estuviste para tu hermana cada vez que te necesitó?</p>
+      <p>Y también está la forma en la que hablas de tu familia. La manera en la que quieres a tus padres, a tus hermanos, a tu sobrino… esas pequeñas cosas me hacen darme cuenta de la clase de persona que eres.</p>
+      <p>Y luego estoy yo, viendo cómo cada día tú también estás para mí. Cuando ni siquiera yo misma creo que pueda con algo, tú apareces para decirme que sí puedo.</p>
+      <p>Quiero ser para ti un poquito de lo que tú eres para mí. Quiero estar ahí cada vez que dudes de ti y recordarte todas las veces que has podido antes.</p>
+      <p>No tienes que demostrarle nada a nadie para ser increíble. No tienes que poder con absolutamente todo todos los días. Puedes cansarte, puedes equivocarte, puedes tener miedo y aun así seguir siendo esa persona maravillosa que yo admiro.</p>
+      <p><strong>Yo creo en ti incluso cuando tú no puedas hacerlo.</strong></p>
+      <p>Y si algún día sientes que ya no puedes sostenerlo todo, déjame sostenerte un poquito a ti.</p>
+      <p>Te amo, cielo. Y nunca, jamás, me voy a cansar de recordarte lo increíble que eres. 🤍</p>
+      <p class="signature">Con amor,<br>Karla. 🥹💗</p>
+    `
+  },
+  15: {
+    title:"Ábrelo cuando sientas que yo estuve distante ese día",
+    emoji:"🤍",
+    content:`
+      <p>Hola, cielo.</p>
+      <p>Primero que todo, discúlpame si hoy sentiste que fui una mala novia o que estuve distante contigo.</p>
+      <p>A veces ni yo misma me siento suficiente. Hay días en los que siento que las cosas son más grandes que yo, que mis sentimientos y mis pensamientos me ganan y no sé muy bien cómo continuar.</p>
+      <p>Creo que estoy tan acostumbrada a sentir que tengo que resolverlo todo sola, a no esperar que alguien me apoye o me ayude, que cuando algo me supera simplemente me cierro.</p>
+      <p>Pero quiero que sepas algo, mi amor: <strong>eso nunca ha significado que te quiera menos.</strong></p>
+      <p>Contigo estoy aprendiendo poquito a poquito a ser una mejor novia, una mejor persona y a entender que no siempre tengo que poder con todo sola.</p>
+      <p>Así que si algún día me notas distante, callada o un poquito insoportable, por favor no pienses inmediatamente que dejé de quererte.</p>
+      <p>Solo quiéreme como siempre. Tenme un poquito de paciencia. Y cuando puedas, recuérdame que no estoy sola.</p>
+      <p><strong>Si alguna vez me ves distante, no confundas mi silencio con falta de amor.</strong> 🤍</p>
+      <p class="signature">Karla</p>
+    `
+  },
+  16: {
+    title:"Ábrelo cuando hayas leído todas las cartas",
+    emoji:"💌",
+    content:`
+      <p><strong>Hola, Daniel. &lt;3</strong></p>
+      <p>Si estás leyendo esto significa que llegaste hasta aquí.</p>
+      <p>Leíste cada una de mis cartas, cada palabra que escribí pensando en ti y cada pequeño pedacito de mi corazón que decidí dejarte en esta página.</p>
+      <p>Y ahora llegaste a la última. Creo que ya no me queda ningún lugar donde esconderte cuánto te amo.</p>
+      <p>Así que esta vez no voy a decirte “ábrela cuando”. Esta vez simplemente quiero decirte <strong>gracias</strong>.</p>
+      <p>Gracias por amarme en cada etapa, en cada minuto de mi vida, aunque esté enojada, triste, feliz, eufórica o solamente coma galletas con mayonesa. 😭</p>
+      <p>Gracias por amarme tal y como soy, por nunca intentar cambiar mi forma de querer y por aceptar todo mi amor aunque a veces sea demasiado intensa y babosa.</p>
+      <p>No sé si estás leyendo esta carta un mes después de que te envié la primera carta o un año después, pero quiero que sepas que cuando estés leyendo esto, sin importar cuál sea nuestra situación, te voy a seguir queriendo con la misma intensidad o más incluso que ahora.</p>
+      <p>Así que, tesorito, gracias por escucharme y tomarte el tiempo de entenderme. Eres de las cosas más bonitas que me han pasado.</p>
+      <p>Hoy son 53 días, pero espero que algún día el contador explote porque no pueda con tantos días. 🥹</p>
+      <p>Te amo, Daniel, con todo mi corazón. No tengo más palabras que regalarte que no hayas escuchado antes y si necesitas que te las repita, lo haré cada día.</p>
+      <p><strong>Fin de las cartas. Pero no de nuestra historia. ♡</strong></p>
+      <p class="signature">Tu cielito,<br>Karla. 🤍</p>
+    `
+  }
+};
+
+const list = document.getElementById("lettersList");
+Object.entries(letters).forEach(([num, letter])=>{
+  const button=document.createElement("button");
+  button.className="letter-link";
+  button.innerHTML=`<span class="num">${num}.</span><span>${letter.emoji} ${letter.title}</span>`;
+  button.onclick=()=>openLetter(Number(num));
+  list.appendChild(button);
+});
+
+function show(id){
+  document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+  window.scrollTo({top:0,behavior:"instant"});
+}
+
+function openLetter(num){
+  const letter=letters[num];
+  if(!letter)return;
+  document.getElementById("letterNumber").textContent=`Carta ${num}`;
+  document.getElementById("letterEyebrow").textContent=letter.emoji;
+  document.getElementById("letterTitle").textContent=letter.title;
+  document.getElementById("letterContent").innerHTML=letter.content;
+  show("letter");
+}
+
+/* Enlaces directos:
+   index.html?carta=1 ... index.html?carta=16
+   La carta especial sigue siendo accesible directamente desde el listado.
+*/
+const params=new URLSearchParams(location.search);
+const direct=params.get("carta");
+if(direct && letters[direct]){
+  openLetter(Number(direct));
+}
+</script>
+</body>
+</html>
