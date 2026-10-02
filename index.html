@@ -3,393 +3,327 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
 <title>Para mi niño hermoso 🤍</title>
 <style>
-  :root{
-    --bg:#fbf5f1;
-    --paper:#fffdfb;
-    --ink:#3b302d;
-    --muted:#806f69;
-    --accent:#a98278;
-    --accent2:#d8b9ad;
-    --line:#eadbd4;
-    --shadow:0 18px 50px rgba(74,50,42,.10);
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    background:linear-gradient(135deg,#fbf5f1,#f7eee9);
-    color:var(--ink);
-    font-family:Georgia,"Times New Roman",serif;
-    min-height:100vh;
-  }
-  button,a{font:inherit}
-  .screen{display:none;min-height:100vh;padding:28px 18px}
-  .screen.active{display:flex;align-items:center;justify-content:center}
-  .card{
-    width:min(720px,100%);
-    background:rgba(255,253,251,.94);
-    border:1px solid var(--line);
-    border-radius:28px;
-    box-shadow:var(--shadow);
-    padding:34px 24px;
-  }
-  .center{text-align:center}
-  .eyebrow{
-    color:var(--accent);
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    font-size:.78rem;
-  }
-  h1,h2{font-weight:500;line-height:1.15}
-  h1{font-size:clamp(2.2rem,8vw,4rem);margin:14px 0}
-  h2{font-size:clamp(1.7rem,6vw,2.6rem);margin:10px 0 24px}
-  p{font-size:1.08rem;line-height:1.85;margin:0 0 16px}
-  .quote{font-style:italic;color:var(--muted);margin:18px auto 28px;max-width:560px}
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;
-    border:0;border-radius:999px;padding:13px 22px;
-    background:var(--accent);color:white;cursor:pointer;
-    box-shadow:0 8px 22px rgba(111,79,69,.18);
-    text-decoration:none;transition:.2s transform,.2s opacity;
-  }
-  .btn:hover{transform:translateY(-2px)}
-  .btn.secondary{background:#eee1dc;color:var(--ink);box-shadow:none}
-  .actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
-  .letters{display:grid;gap:12px;margin-top:22px}
-  .letter-link{
-    width:100%;text-align:left;padding:17px 18px;border:1px solid var(--line);
-    border-radius:18px;background:#fff;color:var(--ink);cursor:pointer;
-    display:flex;gap:13px;align-items:flex-start;
-  }
-  .letter-link:hover{background:#fffaf7}
-  .num{min-width:30px;color:var(--accent);font-weight:bold}
-  .special{
-    margin-top:26px;padding:22px;border:1px solid #dec6bc;border-radius:22px;
-    background:linear-gradient(135deg,#fffaf7,#f7eee9);text-align:center;
-  }
-  .special h3{margin:4px 0 8px;font-size:1.35rem}
-  .letter-body{margin-top:18px}
-  .letter-body p{white-space:pre-line}
-  .signature{text-align:right;margin-top:28px;font-style:italic}
-  .polaroids{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:24px}
-  .polaroid{
-    background:white;padding:10px 10px 16px;border:1px solid #e8ded9;
-    box-shadow:0 10px 24px rgba(70,50,44,.09);transform:rotate(-1deg);
-  }
-  .polaroid:nth-child(even){transform:rotate(1.2deg)}
-  .polaroid .photo{
-    aspect-ratio:1/1;background:#f3ebe6;border-radius:2px;
-    display:flex;align-items:center;justify-content:center;color:#9b8880;
-    overflow:hidden;
-  }
-  .polaroid img{width:100%;height:100%;object-fit:cover}
-  .caption{font-size:.95rem;line-height:1.45;margin-top:10px;text-align:center}
-  .small{font-size:.88rem;color:var(--muted)}
-  .topbar{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:20px}
-  .hidden{display:none!important}
-  @media(max-width:500px){
-    .card{padding:28px 18px;border-radius:22px}
-    p{font-size:1.02rem;line-height:1.75}
-  }
+:root{
+  --bg:#fbf5f1;--paper:#fffdfb;--ink:#3b302d;--muted:#806f69;
+  --accent:#a98278;--accent2:#d8b9ad;--line:#eadbd4;
+  --shadow:0 18px 50px rgba(74,50,42,.10)
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(135deg,#fbf5f1,#f7eee9);color:var(--ink);
+font-family:Georgia,"Times New Roman",serif;min-height:100vh}
+button{font:inherit}.screen{display:none;min-height:100vh;padding:28px 18px}
+.screen.active{display:flex;align-items:center;justify-content:center}
+.card{width:min(760px,100%);background:rgba(255,253,251,.96);border:1px solid var(--line);
+border-radius:28px;box-shadow:var(--shadow);padding:34px 24px}
+.center{text-align:center}.eyebrow{color:var(--accent);letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
+h1,h2{font-weight:500;line-height:1.15}h1{font-size:clamp(2.2rem,8vw,4rem);margin:14px 0}
+h2{font-size:clamp(1.7rem,6vw,2.6rem);margin:10px 0 24px}
+p{font-size:1.08rem;line-height:1.85;margin:0 0 16px}.quote{font-style:italic;color:var(--muted);margin:18px auto 28px;max-width:600px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:13px 22px;
+background:var(--accent);color:white;cursor:pointer;box-shadow:0 8px 22px rgba(111,79,69,.18);text-decoration:none}
+.btn.secondary{background:#eee1dc;color:var(--ink);box-shadow:none}.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.letters{display:grid;gap:12px;margin-top:22px}
+.letter-link{width:100%;text-align:left;padding:17px 18px;border:1px solid var(--line);border-radius:18px;background:#fff;color:var(--ink);
+display:flex;gap:13px;align-items:flex-start;opacity:1;cursor:default}
+.letter-link:disabled{opacity:1}.num{min-width:30px;color:var(--accent);font-weight:bold}
+.special{margin-top:26px;padding:22px;border:1px solid #dec6bc;border-radius:22px;background:linear-gradient(135deg,#fffaf7,#f7eee9);text-align:center}
+.special h3{margin:4px 0 8px;font-size:1.35rem}.letter-body{margin-top:18px}.signature{text-align:right;margin-top:28px;font-style:italic}
+.small{font-size:.88rem;color:var(--muted)}
+.topbar{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:20px}
+.polaroids{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;margin-top:24px}
+.polaroid{background:white;padding:10px 10px 16px;border:1px solid #e8ded9;box-shadow:0 10px 24px rgba(70,50,44,.09);transform:rotate(-1deg)}
+.polaroid:nth-child(even){transform:rotate(1.2deg)}
+.photo{aspect-ratio:1/1;background:#f3ebe6;display:flex;align-items:center;justify-content:center;color:#9b8880;text-align:center;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}.caption{font-size:.95rem;line-height:1.45;margin-top:10px;text-align:center}
+.lock-note{margin-top:18px}.back{margin-bottom:18px}
+@media(max-width:500px){.card{padding:28px 18px;border-radius:22px}p{font-size:1.02rem;line-height:1.75}}
 </style>
 </head>
 <body>
 
 <section id="home" class="screen active">
-  <main class="card center">
-    <div class="eyebrow">Un pequeño pedacito de mi corazón</div>
-    <h1>Para mi niño hermoso 🤍</h1>
-    <p class="quote">“Hecho especialmente para ti.”</p>
-    <button class="btn" onclick="show('welcome')">Abrir 💌</button>
-  </main>
+<main class="card center">
+<div class="eyebrow">Un pequeño pedacito de mi corazón</div>
+<h1>Para mi niño hermoso 🤍</h1>
+<p class="quote">“Un pequeño pedacito de mi corazón, hecho especialmente para ti.”</p>
+<button class="btn" onclick="show('welcome')">Abrir 💌</button>
+</main>
 </section>
 
 <section id="welcome" class="screen">
-  <main class="card">
-    <div class="eyebrow">Carta de bienvenida</div>
-    <h2>Hola, mi niño hermoso 🤍</h2>
-    <div class="letter-body">
-      <p>Esta página es un pequeño pedacito de mi corazón hecho especialmente para ti.</p>
-      <p>Aquí fui guardando palabras, recuerdos, sentimientos y pequeños pedacitos de todo lo que significas para mí.</p>
-      <p>Hay cartas para distintos momentos: para cuando me extrañes, cuando no puedas dormir, cuando necesites que te recuerde lo increíble que eres, cuando quieras reír y para muchos otros momentos en los que quiero estar cerquita de ti aunque la distancia no me deje.</p>
-      <p>Y como quiero que cada carta llegue a ti justo cuando la necesites, tú me pedirás la carta que quieras abrir y yo te mandaré su enlace. 🤍</p>
-    </div>
-    <div class="actions">
-      <button class="btn" onclick="show('list')">Ver mis cartas 💌</button>
-    </div>
-  </main>
+<main class="card">
+<div class="eyebrow">Carta de bienvenida</div>
+<h2>Hola, mi niño hermoso 🤍</h2>
+<div class="letter-body">
+<p>Esta página es un pequeño pedacito de mi corazón hecho especialmente para ti.</p>
+<p>Aquí fui guardando palabras, recuerdos, sentimientos y pequeños pedacitos de todo lo que significas para mí.</p>
+<p>Hay cartas para distintos momentos: para cuando me extrañes, cuando no puedas dormir, cuando necesites que te recuerde lo increíble que eres, cuando quieras reír y para muchos otros momentos en los que quiero estar cerquita de ti aunque la distancia no me deje.</p>
+<p>Y como quiero que cada carta llegue a ti justo cuando la necesites, tú me pedirás la carta que quieras abrir y yo te mandaré su enlace. 🤍</p>
+<p>No importa cuál abras ni cuándo la abras. Cada una fue escrita pensando en ti.</p>
+</div>
+<div class="actions"><button class="btn" onclick="show('list')">Ver mis cartas 💌</button></div>
+</main>
 </section>
 
 <section id="list" class="screen">
-  <main class="card">
-    <div class="topbar">
-      <div>
-        <div class="eyebrow">Para ti</div>
-        <h2 style="margin-bottom:0">Mis cartas 💗</h2>
-      </div>
-    </div>
-
-    <div class="letters" id="lettersList"></div>
-
-    <div class="special">
-      <div class="eyebrow">Carta especial</div>
-      <h3>Feliz 2 meses, tesorito 🤍</h3>
-      <p class="small">Esta carta no necesita un enlace especial. Puedes abrirla directamente desde aquí.</p>
-      <button class="btn" onclick="show('twoMonths')">Abrir carta especial 🎁</button>
-    </div>
-  </main>
+<main class="card">
+<div class="eyebrow">Para ti</div><h2>Mis cartas 💗</h2>
+<div class="letters" id="lettersList"></div>
+<p class="small center lock-note">🔒 Estas cartas están cerradas. Solo pueden abrirse con su enlace individual.</p>
+<div class="special">
+<div class="eyebrow">Carta especial</div><h3>Feliz 2 meses, tesorito 🤍</h3>
+<p class="small">Esta sí puedes abrirla directamente desde aquí.</p>
+<button class="btn" onclick="show('twoMonths')">Abrir carta especial 🎁</button>
+</div>
+</main>
 </section>
 
 <section id="letter" class="screen">
-  <main class="card">
-    <div class="topbar">
-      <button class="btn secondary" onclick="show('list')">← Volver</button>
-      <span id="letterNumber" class="small"></span>
-    </div>
-    <div class="eyebrow" id="letterEyebrow"></div>
-    <h2 id="letterTitle"></h2>
-    <div id="letterContent" class="letter-body"></div>
-  </main>
+<main class="card">
+<div class="topbar"><button class="btn secondary" onclick="show('list')">← Volver</button><span id="letterNumber" class="small"></span></div>
+<div class="eyebrow" id="letterEyebrow"></div><h2 id="letterTitle"></h2>
+<div id="letterContent" class="letter-body"></div>
+</main>
 </section>
 
 <section id="twoMonths" class="screen">
-  <main class="card">
-    <div class="topbar">
-      <button class="btn secondary" onclick="show('list')">← Volver</button>
-      <span class="small">Carta especial 🤍</span>
-    </div>
-    <div class="eyebrow">Un día para celebrar</div>
-    <h2>Feliz 2 meses, tesorito 🤍</h2>
-    <div class="letter-body">
-      <p><strong>Feliz 2 meses, tesorito. 🤍</strong></p>
-      <p>Dos meses.</p>
-      <p>Puede parecer poquito tiempo cuando lo miras escrito así, pero cuando pienso en todo lo que ha cabido dentro de estos dos meses, siento que hemos vivido muchísimo.</p>
-      <p>Han sido dos meses de mensajes, llamadas, risas, noches en las que el sueño nos ganó hablando, juegos, momentos bonitos, pequeños desacuerdos, reconciliaciones, planes, sueños y un montón de recuerdos que ahora forman parte de nosotros.</p>
-      <p>Y pensar que todo esto empezó con nosotros estando tan lejos… y aun así conseguiste convertirte en una de las personas más importantes de mi vida.</p>
-      <p><strong>Gracias por estos primeros dos meses, mi niño.</strong></p>
-      <p>Gracias por cada “te quiero”, por cada buenos días, por cada llamada, por cada vez que me has hecho sonreír cuando ni siquiera sabías que lo necesitaba y por cada momento en el que simplemente decidiste quedarte.</p>
-      <p>Me hace mucha ilusión pensar que hoy celebramos nuestro segundo mes, pero todavía más pensar en todos los meses que espero que nos queden.</p>
-      <p>Porque si con solamente dos meses ya tengo tantos recuerdos tuyos que guardar, no quiero imaginar cuántos vamos a tener cuando nuestro contador llegue a un año… o a cinco… o a diez. 🥹</p>
-      <p><strong>Así que feliz segundo mes, mi amor.</strong></p>
-      <p>Gracias por ser tú, por elegirme y por dejarme quererte de esta manera tan intensa, cursi y absolutamente babosa que ya conoces. JAJAJA.</p>
-      <p>Espero que este sea solamente el segundo de muchísimos meses más.</p>
-      <p>Y algún día quiero mirar hacia atrás y pensar:</p>
-      <p><em>“Qué bonito que aquel día, cuando solamente llevábamos dos meses, ya soñábamos con toda una vida juntos.”</em></p>
-      <p>Te amo muchísimo, Daniel.</p>
-      <p><strong>Feliz 2 meses, tesorito. 🤍</strong></p>
-      <p><em>Hoy son dos meses.<br>Mañana serán 61 días.<br>Y algún día espero que dejemos de contar porque sean demasiados para llevar la cuenta.</em> 🥹</p>
-      <p class="signature">Tu cielito,<br>Karla. 🤍</p>
-    </div>
-  </main>
-</section>
+<main class="card">
+<div class="topbar"><button class="btn secondary" onclick="show('list')">← Volver</button><span class="small">Carta especial 🤍</span></div>
+<div class="eyebrow">Un día para celebrar</div><h2>Feliz 2 meses, tesorito 🤍</h2>
+<div class="letter-body">
+<p><strong>Feliz 2 meses, tesorito. 🤍</strong></p>
+<p>Dos meses.</p>
+<p>Puede parecer poquito tiempo cuando lo miras escrito así, pero cuando pienso en todo lo que ha cabido dentro de estos dos meses, siento que hemos vivido muchísimo.</p>
+<p>Han sido dos meses de mensajes, llamadas, risas, noches en las que el sueño nos ganó hablando, juegos, momentos bonitos, pequeños desacuerdos, reconciliaciones, planes, sueños y un montón de recuerdos que ahora forman parte de nosotros.</p>
+<p>Y pensar que todo esto empezó con nosotros estando tan lejos… y aun así conseguiste convertirte en una de las personas más importantes de mi vida.</p>
+<p><strong>Gracias por estos primeros dos meses, mi niño.</strong></p>
+<p>Gracias por cada “te quiero”, por cada buenos días, por cada llamada, por cada vez que me has hecho sonreír cuando ni siquiera sabías que lo necesitaba y por cada momento en el que simplemente decidiste quedarte.</p>
+<p>Me hace mucha ilusión pensar que hoy celebramos nuestro segundo mes, pero todavía más pensar en todos los meses que espero que nos queden.</p>
+<p>Porque si con solamente dos meses ya tengo tantos recuerdos tuyos que guardar, no quiero imaginar cuántos vamos a tener cuando nuestro contador llegue a un año… o a cinco… o a diez. 🥹</p>
+<p><strong>Así que feliz segundo mes, mi amor.</strong></p>
+<p>Gracias por ser tú, por elegirme y por dejarme quererte de esta manera tan intensa, cursi y absolutamente babosa que ya conoces. JAJAJA.</p>
+<p>Espero que este sea solamente el segundo de muchísimos meses más.</p>
+<p>Y algún día quiero mirar hacia atrás y pensar:</p>
+<p><em>“Qué bonito que aquel día, cuando solamente llevábamos dos meses, ya soñábamos con toda una vida juntos.”</em></p>
+<p>Te amo muchísimo, Daniel.</p>
+<p><strong>Feliz 2 meses, tesorito. 🤍</strong></p>
+<p><em>Hoy son dos meses.<br>Mañana serán 61 días.<br>Y algún día espero que dejemos de contar porque sean demasiados para llevar la cuenta.</em> 🥹</p>
+<p class="signature">Tu cielito,<br>Karla. 🤍</p>
+</div></main></section>
 
 <script>
-const letters = {
-  1: {
-    title:"Ábrelo cuando te sientas triste",
-    emoji:"🌧️",
-    content:`
-      <p>Hola tesorito, la verdad no me gustaría que abrieras esta carta, porque no quiero que estés triste, no quiero que esos ojitos color cielo se me depriman...</p>
-      <p>Esta carta ya tiene su versión completa; aquí podemos ir pegando exactamente el texto final que dejamos listo.</p>
-    `
-  },
-  2: {
-    title:"Ábrelo cuando sientas que el mundo es demasiado para ti",
-    emoji:"🌎",
-    content:`
-      <p>Hola corazón, si el mundo está intentando apagarlo, entonces prendámosle fuego para que se apague él.</p>
-      <p>Tienes permitido llorar y desahogarte todo lo que quieras, porque la vida se trata de caerse 20 veces pero levantarse 21...</p>
-    `
-  },
-  3: {
-    title:"Ábrelo cuando me extrañes demasiado",
-    emoji:"💌",
-    content:`
-      <p>Hola precioso, yo pienso en ti 24/7...</p>
-      <p>Te extraño como si siempre hubiéramos estado juntos, aunque nos separen muchísimas millas. Y aun sin tocarnos, llegaste a lo más profundo de mi corazón.</p>
-    `
-  },
-  4: {
-    title:"Ábrelo cuando no te sientas suficiente",
-    emoji:"🫂",
-    content:`
-      <p>Hola mi niño...</p>
-      <p>Aquí va la carta final sobre todo lo que admiro de ti, tus mensajes, llamadas, juegos, descansos y la tranquilidad que me das para ser yo misma.</p>
-    `
-  },
-  5: {
-    title:"Ábrelo cuando quieras saber por qué tú y no alguien más",
-    emoji:"💗",
-    content:`
-      <p>Hola cariñito...</p>
-      <p>Esta carta habla de por qué te elegí, de lo que siento al ser amada por ti y de por qué quiero compartir contigo mis alegrías, mis miedos, mis lágrimas y mi vida.</p>
-    `
-  },
-  6: {
-    title:"Ábrelo cuando discutamos y no lo hayamos solucionado",
-    emoji:"🥺",
-    content:`
-      <p>Hola Dani...</p>
-      <p>Esta carta habla de lo triste que me pone sentir que algo está mal entre nosotros y contiene nuestras reglas para discutir y volver a encontrarnos.</p>
-    `
-  },
-  7: {
-    title:"Ábrelo cuando te sientas solo",
-    emoji:"🫂",
-    content:`
-      <p>Hola lindo...</p>
-      <p>Cuando pienses que no hay nadie en tu equipo, yo estoy aquí animándote con pompones y todo, en la mitad de las gradas gritando tu nombre.</p>
-    `
-  },
-  8: {
-    title:"Ábrelo cuando a veces la distancia te supere",
-    emoji:"✈️",
-    content:`
-      <p>Hola precioso...</p>
-      <p>Todo este tiempo separados va a valer la pena. Haremos nuestros planes, viajaremos por el mundo, iremos a Disney y a Suiza, caminaremos tomados de la mano y construiremos todos esos recuerdos que todavía nos faltan.</p>
-    `
-  },
-  9: {
-    title:"Ábrelo cuando quieras saber qué me gusta de ti",
-    emoji:"💙",
-    content:`
-      <p>Hola cuchurrumiiiiinnnn...</p>
-      <p>Podría decirte tus ojos, tu sonrisa y tu carita preciosa, pero prefiero hablarte de esos pequeños detalles que quizá nunca hayas notado...</p>
-    `
-  },
-  10: {
-    title:"Ábrelo cuando no puedas dormir",
-    emoji:"🌙",
-    content:`
-      <p>Hola, amor.</p>
-      <p>¿Todavía no puedes dormir? Ven, acuéstate. No tienes que hablar si no quieres. Solo me quedaré contigo todo el rato que quieras...</p>
-    `
-  },
-  11: {
-    title:"Ábrelo cuando quieras reír",
-    emoji:"😂",
-    content:`
-      <p>Hoooooolaaaaaa wapooo...</p>
-      <p>¿Recuerdas esa noche que nos quedamos jugando pares o nones? Estábamos demasiado sincronizados. Eso es el poder del amor 😔.</p>
-      <p>Aquí van nuestra sección de chistes y todos esos recuerdos que queremos conservar para hacerte reír.</p>
-    `
-  },
-  12: {
-    title:"Ábrelo cuando estés sobrepensando demasiado",
-    emoji:"🧠",
-    content:`
-      <p>Hola mi niño...</p>
-      <p>Esta carta está hecha para ayudarte a separar lo que sabes de lo que tu cabeza está imaginando y recordarte que puedes respirar, soltar un poquito y hablar conmigo.</p>
-    `
-  },
-  13: {
-    title:"Ábrelo cuando quieras mirar a través de mis ojos",
-    emoji:"📸",
-    polaroids:true,
-    content:`
-      <p>Quiero enseñarte algunas de las cosas que me recuerdan a ti, porque estás escondido en muchísimos rincones de mi vida.</p>
-      <div class="polaroids">
-        <div class="polaroid"><div class="photo">☁️<br>Foto por añadir</div><div class="caption">El cielo siempre será lo que más me recuerda a ti, aunque ningún día se podrá comparar con lo lindo que eres tú.</div></div>
-        <div class="polaroid"><div class="photo">🇨🇭<br>Foto por añadir</div><div class="caption">Segundo destino: Suiza. Algún día conoceremos todos esos lugares que nos interesan.</div></div>
-        <div class="polaroid"><div class="photo">🎶<br>Foto por añadir</div><div class="caption">Cada vez que escucho canciones de amor tu nombre viene a mi cabeza.</div></div>
-        <div class="polaroid"><div class="photo">🫓<br>Foto por añadir</div><div class="caption">Las famosas pupusas que algún día cocinaré para ti, junto a todo mi repertorio de comida.</div></div>
-        <div class="polaroid"><div class="photo">🧸<br>Foto por añadir</div><div class="caption">Nuestra Petunia, nuestra bebé. 🤍</div></div>
-        <div class="polaroid"><div class="photo">💌<br>Foto por añadir</div><div class="caption">Tus mensajes destacados y todos los que todavía me faltaron por poner.</div></div>
-        <div class="polaroid"><div class="photo">✈️<br>Foto por añadir</div><div class="caption">Nuestro lugar de encuentro, donde algún día nuestro “algún día” se convertirá en “hoy”.</div></div>
-        <div class="polaroid"><div class="photo">🎨<br>Foto por añadir</div><div class="caption">Mi musa favorita. Volviste a despertar mis ganas de dibujar.</div></div>
-      </div>
-    `
-  },
-  14: {
-    title:"Ábrelo cuando dudes de ti mismo",
-    emoji:"🥹",
-    content:`
-      <p>Hola hermoso,</p>
-      <p>Primero que nada quiero que sepas que no existe nadie en este mundo que sea tan capaz como tú. Absolutamente nadie.</p>
-      <p>A veces quisiera que pudieras verte con mis ojos, aunque fuera solamente por unos minutos, porque quizás entonces entenderías por qué estoy tan orgullosa de ti.</p>
-      <p>¿Cómo no voy a admirarte después de saber que fuiste capaz de viajar a otro país siendo tan joven y salir adelante? ¿Cómo no voy a hacerlo después de saber que trabajaste y estudiaste al mismo tiempo, que estuviste para tu hermana cada vez que te necesitó?</p>
-      <p>Y también está la forma en la que hablas de tu familia. La manera en la que quieres a tus padres, a tus hermanos, a tu sobrino… esas pequeñas cosas me hacen darme cuenta de la clase de persona que eres.</p>
-      <p>Y luego estoy yo, viendo cómo cada día tú también estás para mí. Cuando ni siquiera yo misma creo que pueda con algo, tú apareces para decirme que sí puedo.</p>
-      <p>Quiero ser para ti un poquito de lo que tú eres para mí. Quiero estar ahí cada vez que dudes de ti y recordarte todas las veces que has podido antes.</p>
-      <p>No tienes que demostrarle nada a nadie para ser increíble. No tienes que poder con absolutamente todo todos los días. Puedes cansarte, puedes equivocarte, puedes tener miedo y aun así seguir siendo esa persona maravillosa que yo admiro.</p>
-      <p><strong>Yo creo en ti incluso cuando tú no puedas hacerlo.</strong></p>
-      <p>Y si algún día sientes que ya no puedes sostenerlo todo, déjame sostenerte un poquito a ti.</p>
-      <p>Te amo, cielo. Y nunca, jamás, me voy a cansar de recordarte lo increíble que eres. 🤍</p>
-      <p class="signature">Con amor,<br>Karla. 🥹💗</p>
-    `
-  },
-  15: {
-    title:"Ábrelo cuando sientas que yo estuve distante ese día",
-    emoji:"🤍",
-    content:`
-      <p>Hola, cielo.</p>
-      <p>Primero que todo, discúlpame si hoy sentiste que fui una mala novia o que estuve distante contigo.</p>
-      <p>A veces ni yo misma me siento suficiente. Hay días en los que siento que las cosas son más grandes que yo, que mis sentimientos y mis pensamientos me ganan y no sé muy bien cómo continuar.</p>
-      <p>Creo que estoy tan acostumbrada a sentir que tengo que resolverlo todo sola, a no esperar que alguien me apoye o me ayude, que cuando algo me supera simplemente me cierro.</p>
-      <p>Pero quiero que sepas algo, mi amor: <strong>eso nunca ha significado que te quiera menos.</strong></p>
-      <p>Contigo estoy aprendiendo poquito a poquito a ser una mejor novia, una mejor persona y a entender que no siempre tengo que poder con todo sola.</p>
-      <p>Así que si algún día me notas distante, callada o un poquito insoportable, por favor no pienses inmediatamente que dejé de quererte.</p>
-      <p>Solo quiéreme como siempre. Tenme un poquito de paciencia. Y cuando puedas, recuérdame que no estoy sola.</p>
-      <p><strong>Si alguna vez me ves distante, no confundas mi silencio con falta de amor.</strong> 🤍</p>
-      <p class="signature">Karla</p>
-    `
-  },
-  16: {
-    title:"Ábrelo cuando hayas leído todas las cartas",
-    emoji:"💌",
-    content:`
-      <p><strong>Hola, Daniel. &lt;3</strong></p>
-      <p>Si estás leyendo esto significa que llegaste hasta aquí.</p>
-      <p>Leíste cada una de mis cartas, cada palabra que escribí pensando en ti y cada pequeño pedacito de mi corazón que decidí dejarte en esta página.</p>
-      <p>Y ahora llegaste a la última. Creo que ya no me queda ningún lugar donde esconderte cuánto te amo.</p>
-      <p>Así que esta vez no voy a decirte “ábrela cuando”. Esta vez simplemente quiero decirte <strong>gracias</strong>.</p>
-      <p>Gracias por amarme en cada etapa, en cada minuto de mi vida, aunque esté enojada, triste, feliz, eufórica o solamente coma galletas con mayonesa. 😭</p>
-      <p>Gracias por amarme tal y como soy, por nunca intentar cambiar mi forma de querer y por aceptar todo mi amor aunque a veces sea demasiado intensa y babosa.</p>
-      <p>No sé si estás leyendo esta carta un mes después de que te envié la primera carta o un año después, pero quiero que sepas que cuando estés leyendo esto, sin importar cuál sea nuestra situación, te voy a seguir queriendo con la misma intensidad o más incluso que ahora.</p>
-      <p>Así que, tesorito, gracias por escucharme y tomarte el tiempo de entenderme. Eres de las cosas más bonitas que me han pasado.</p>
-      <p>Hoy son 53 días, pero espero que algún día el contador explote porque no pueda con tantos días. 🥹</p>
-      <p>Te amo, Daniel, con todo mi corazón. No tengo más palabras que regalarte que no hayas escuchado antes y si necesitas que te las repita, lo haré cada día.</p>
-      <p><strong>Fin de las cartas. Pero no de nuestra historia. ♡</strong></p>
-      <p class="signature">Tu cielito,<br>Karla. 🤍</p>
-    `
-  }
+const letters={
+1:{title:"Ábrelo cuando te sientas triste",emoji:"🌧️",content:`
+<p>Hola tesorito, la verdad no me gustaría que abrieras esta carta, porque no quiero que estés triste, no quiero que esos ojitos color cielo se me depriman, porque mi amor, usted no se merece que nada ni nadie le lastime.</p>
+<p>Porque usted es una bendición que pocas veces cae así del cielo, porque con tu sonrisa iluminas toda la habitación, haces que un día triste se vuelva el día más feliz de mi vida, porque una cosa es querer y otra muy distinta es amarte tal y como lo hago.</p>
+<p>Y sé que hay días grises y días en los que las cosas no se ven tan bonitas, pero te prometo que no es así: las flores siguen oliendo igual de rico, tu comida favorita sigue sabiendo a manjar, tu color favorito sigue siendo el azul y mis ojos siguen mirándote solo a ti.</p>
+<p>Entonces, cuando pienses que hay algo mal en tu vida, piensa en lo que sí está bien, para que tus días oscuros se iluminen así como tú lo haces con los míos.</p>
+<p>Espero que esta carta te mejore un poquito el ánimo, porque yo no sé qué hacer cuando tú estás mal y a mí se me estruja el corazón. Supongo que eso es amar a alguien: que compartamos los mismos sentimientos.</p>
+<p>Así que déjame acompañarte hasta que las lágrimas abandonen tu corazón y se vuelva a colmar de emoción.</p>
+<p>No olvides que te amo desde que llegaste a mi vida y hasta el día que te vayas y mucho después te seguiré amando.</p>
+<p class="signature">Karla 🤍</p>`},
+2:{title:"Ábrelo cuando sientas que el mundo es demasiado para ti",emoji:"🌎",content:`
+<p>Hola corazón, si el mundo está intentando apagarlo, entonces prendámosle fuego para que se apague él.</p>
+<p>Tienes permitido llorar y desahogarte todo lo que quieras, porque la vida se trata de caerse 20 veces pero levantarse 21.</p>
+<p>Si sientes que se te oprime el pecho o que tu cabeza suena demasiado alto, deja que fluya todo. Suelta esos sentimientos que no están equivocados. No tienes que fingir que estás bien conmigo.</p>
+<p>Tú eres un niño muy fuerte, capaz de todo, y yo siempre estaré orgullosa de ti. Porque si sé que hay alguien que puede con todo, eres tú.</p>
+<p>Pero también quiero que recuerdes que ser fuerte no significa tener que poder con todo tú solo. Si algún día necesitas descansar, descansar también está bien.</p>
+<p>Así que ven, respira conmigo, deja caer por un ratito todo eso que llevas encima y recuerda que aquí tienes a alguien que cree en ti con todo su corazón.</p>
+<p>Cuando el mundo parezca demasiado grande, lo hacemos pequeñito juntos. Y cuando vuelva a amanecer, quiero estar ahí para verlo contigo.</p>
+<p class="signature">Te amo, mi niño. 🤍<br>Karla</p>`},
+3:{title:"Ábrelo cuando me extrañes demasiado",emoji:"💌",content:`
+<p>Hola precioso,</p>
+<p>Verás, yo pienso en ti 24/7, cada segundo de mi vida, cada instante que existe. Yo te extraño, porque aunque estemos tan lejitos y nunca nos hayamos visto, te extraño como si siempre hubiéramos estado juntos.</p>
+<p>Te extraño como el sol extraña a la luna, porque nunca pueden verse, o como las flores a la primavera, o como las abejitas a su reina.</p>
+<p>Y sé que nos separan una buena cantidad de millas, pero eso no hace que te quiera menos. Al contrario, hace que te quiera muchísimo más, porque sin siquiera tocarnos tú llegaste a lo más profundo de mi corazón, limpiaste cada rincón de él que estaba sucio de tristeza y lo llenaste de luz y de calor.</p>
+<p>Me brindaste ese bienestar que no sabía que necesitaba y me llenaste del amor que siempre estuve buscando. Y supongo que eso te hace la casualidad más bonita, porque no hay nadie que pueda ser capaz de lograr todo lo que tú consigues hacer en mí.</p>
+<p>Son tus ojos, tus labios, tus cachetones, tus risas en las videollamadas, tu forma de mirarme, tu sonrisa cada vez que te digo algo lindo y te pones tímido, tu voz, todo lo que representas.</p>
+<p>Así que si algún día me extrañas demasiado, recuerda que probablemente yo esté mirando el teléfono esperando otro mensaje tuyo, pensando en ti y deseando que la distancia fuera solamente un par de pasos.</p>
+<p>Algún día ya no tendremos que extrañarnos desde lejos. Algún día podré mirarte y decirte todo esto mientras estoy junto a ti.</p>
+<p class="signature">Te extraño, te quiero y te amo muchísimo.<br>Karla 🤍</p>`},
+4:{title:"Ábrelo cuando no te sientas suficiente",emoji:"🫂",content:`
+<p>Hola mi niño,</p>
+<p>Quiero que recuerdes algo: yo no necesito que seas el mejor, el más fuerte, el más perfecto ni que tengas todas las respuestas. No necesito una versión perfecta de ti.</p>
+<p>Te quiero a ti. Al niño que se pone tímido cuando le digo algo bonito, al que se queda dormido en llamada, al que me escribe en sus pequeños descansos, al que me escucha cuando necesito hablar y al que también tiene días en los que no sabe muy bien qué hacer.</p>
+<p>Cada mensaje tuyo de buenos días, de cómo estás, de qué haces y cada mensaje largo diciéndome cuánto me quieres lo tengo guardado. Tus llamadas a las tantas de la madrugada, las horas hablando o simplemente durmiendo juntos, nuestros juegos y esos minutos que consigues sacar de tu día para escribirme son cosas que para mí valen muchísimo.</p>
+<p>Contigo puedo ser yo misma. Puedo llorar, reír, hacer el tonto y descansar mi corazón en tus manos, en la tranquilidad de tu voz.</p>
+<p>No necesito que seas perfecto para sentirme afortunada de tenerte. Necesito que seas tú, porque precisamente a ti es a quien amo.</p>
+<p>Y si algún día dudas de si eres suficiente para mí, vuelve a esta carta y recuerda que no tienes que ganarte mi amor cada día. Ya tienes mi corazón.</p>
+<p class="signature">Siempre tuya,<br>Karla 🤍</p>`},
+5:{title:"Ábrelo cuando quieras saber por qué tú y no alguien más",emoji:"💗",content:`
+<p>Hola cariñito,</p>
+<p>Supongo que esta es la carta más fácil para escribirte porque literalmente podría pasarme cada día de mi vida recordándote lo increíble que eres y el porqué te elegí para acompañarme el resto de mi vida.</p>
+<p>Porque este amor que siento por ti no es solo para un rato. No, no. Es para que seas la persona que siempre esté junto a mí y que sea la que comparta nuestra felicidad, nuestros miedos, nuestras lágrimas y, sobre todo, la persona a la que llenar de amor cada día.</p>
+<p>Contigo he sentido cosas que nunca pensé imaginarme: lo bonito que es que te quieran con intensidad y con todo su corazón, lo precioso que es que te miren con los ojos del amor, sentirte deseada, sentirte bonita a cada instante, sentir que puedes con todo y mucho más.</p>
+<p>Lo increíble que es amar sin tener miedo a que te lastimen. Porque contigo siento lo que es que me amen de verdad.</p>
+<p>Nadie en este mundo puede compararse contigo, porque nadie es capaz de hacerme sentir todo lo que yo siento con solo mirarte. Algo dentro de mí explota de emoción cada vez que escucho tu nombre o cuando tu rostro viaja por mi cabeza. Con solo pensarte viajo a otro mundo en el que todo es posible.</p>
+<p>Te elegí porque contigo puedo ser yo, porque me haces sentir querida, porque me haces sentir segura, porque me haces reír y porque incluso estando lejos consigues hacerme sentir acompañada.</p>
+<p>Así que si alguna vez te preguntas “¿por qué yo?”, la respuesta es muy sencilla:</p>
+<p><strong>Porque eres tú. Y mi corazón te eligió a ti.</strong></p>
+<p class="signature">Te amo, mi niño.<br>Karla 🤍</p>`},
+6:{title:"Ábrelo cuando discutamos y no lo hayamos solucionado",emoji:"🥺",content:`
+<p>Hola Dani,</p>
+<p>Sé que esta carta me va a costar un poco más escribirla, porque es incómodo cada vez que discutimos. Y no sé por qué discutimos, así que no puedo decirte si es mi culpa o la tuya, pero espero que si fue mía yo haberme disculpado ya.</p>
+<p>Porque los días en los que siento que hay algo mal con nosotros son los días más tristes de mi vida. Me la paso sobrepensando y, si fue mi culpa, espero que me disculpes por ser tan tonta y no saber valorar todo lo que haces por mí.</p>
+<p>Pero me gustaría que continuaras conmigo día a día, a mi lado, que no nos dejemos caer por nada. Nosotros juntos podemos con todo.</p>
+<p>Así que pongamos algunas reglas para cuando discutamos:</p>
+<p>🤍 No insultarnos ni decir cosas solamente para lastimarnos.</p>
+<p>🤍 No usar el silencio como castigo. Si necesitamos espacio, podemos decirlo, pero siempre dejando claro que vamos a volver a hablar.</p>
+<p>🤍 Intentar escuchar antes de responder. No se trata de ganar una discusión, sino de entendernos.</p>
+<p>🤍 No sacar cosas del pasado para hacer daño. Si algo ya fue solucionado, no debería convertirse en un arma.</p>
+<p>🤍 Pedir perdón cuando corresponda y también aprender a aceptar una disculpa.</p>
+<p>🤍 Recordar que somos nosotros contra el problema, no nosotros contra nosotros.</p>
+<p>Y sé que podemos estar enojados hasta sin ganas de hablar con el otro, pero yo siempre querré saber de ti: si estás bien, si dormiste bien, si no pudiste dormir o simplemente si me necesitas ahora mismo.</p>
+<p>Así que ven a donde estoy y arreglémoslo todo, porque sé que lo nuestro vale totalmente la pena.</p>
+<p class="signature">Te amo incluso en los días difíciles.<br>Karla 🤍</p>`},
+7:{title:"Ábrelo cuando te sientas solo",emoji:"🫂",content:`
+<p>Hola lindo,</p>
+<p>Primero que nada quiero que sepas que yo siempre estaré junto a ti, apoyándote y cuidándote. Y cuando pienses que no hay nadie en tu equipo, yo estoy aquí animándote con pompones y todo, en la mitad de las gradas gritando tu nombre porque tú siempre vas a destacar por sobre todo.</p>
+<p>Entonces, esos días que pienses que no hay nadie más contigo, yo siempre estaré presente a tu lado y dándote el lugar que te mereces.</p>
+<p>Eres ese solecito del que todos quieren rodearse, y eso es importante que nunca lo olvides.</p>
+<p>Porque incluso si el mundo te da la espalda, yo siempre me pondré en el medio para que nadie pueda lastimarte. No porque quiera pelearme con el mundo, sino porque quiero que sepas que nunca vas a tener que sentir que estás completamente solo mientras yo esté aquí.</p>
+<p>De eso se trata ser compañeros de vida: de que siempre estaré a tu lado velando por ti, celebrando tus victorias, escuchando tus derrotas y recordándote quién eres cuando tú mismo lo olvides.</p>
+<p>Así que si alguna vez te sientes solo, imagíname ahí: con mis pompones, haciendo muchísimo ruido y gritando “¡VAMOS, DANIEL!” desde las gradas. JAJAJA.</p>
+<p class="signature">Tu fan número uno. 🤍<br>Karla</p>`},
+8:{title:"Ábrelo cuando a veces la distancia te supere",emoji:"✈️",content:`
+<p>Hola precioso,</p>
+<p>Sé que el mayor problema de todo esto es el pesar del tiempo, cuando ya se empiezan a necesitar los abrazos, los besos, los cariños, la compañía uno al lado del otro, el salir tomados de la mano.</p>
+<p>Pero te prometo que todo este tiempo que estamos separados va a valer la pena totalmente, porque el día que podamos finalmente estar juntos no te pienso soltar.</p>
+<p>Haremos todos esos planes que tenemos. Viajaremos por el mundo, iremos a Disney, a Suiza, veremos los atardeceres de cada país que queramos y conoceremos todos esos lugares que alguna vez nos interesaron.</p>
+<p>Caminaremos toda la noche si quieres tomados de la mano, tomaremos helado juntos, veremos películas juntos, estaremos abrazados en el sofá hasta que nos quedemos dormidos.</p>
+<p>Cada día desayunaremos y cenaremos juntos. Prepararé toda la comida que te gusta y la que me gusta a mí para que la pruebes. Te cocinaré todos los dulces que quieras hasta que ya no puedas más.</p>
+<p>Te cuidaré cuando estés enfermo y te acariciaré el cabello hasta que te duermas. Te haré masajes cada vez que te duela el cuerpo. Dormiremos juntos cada día y amaneceremos también uno al lado del otro.</p>
+<p>Tendremos algún día nuestra propia casa y nuestra granjita, junto a todos los animales que queramos. Y algún día construiremos la familia que soñemos, llenándola de amor.</p>
+<p>Y todo eso no será algo tuyo y mío. No. Será algo nuestro, algo de nosotros.</p>
+<p>Por eso, un poco de tiempo separados no se compara con la vida que vamos a tener, porque sé que tú eres mi presente y mi futuro y eso puedo afirmarlo sin titubear.</p>
+<p class="signature">Hasta que llegue nuestro día, te llevo conmigo.<br>Karla 🤍</p>`},
+9:{title:"Ábrelo cuando quieras saber qué me gusta de ti",emoji:"💙",content:`
+<p>Hola cuchurrumiiiinnnn,</p>
+<p>Veamos, veamos… todo lo que me gusta de ti podría resumirse en tus ojos, tu sonrisa y tu carita preciosa, pero prefiero decirte detalles que tal vez nunca te hayas dado cuenta.</p>
+<p>Como, por ejemplo, que cuando duermes y te tapas con la cobija hasta la nariz me resulta bastante tierno.</p>
+<p>Cuando te bañas y te ves así más fresco y con aún gotitas en la cara te hace lucir demasiado lindo y yo me quedo mirándote como si fuera la primera vez.</p>
+<p>Como cuando me despierto de madrugada y estás ahí, aún dormidito con los ojitos cerrados, y puedo mirarte fijamente todo el tiempo que quiera. Entonces me fijo en cada detalle de tu carita linda.</p>
+<p>Me gusta la voz que pones cada vez que me dices algo lindo y tierno, la forma en que me miras y haces que me sienta la mujer más afortunada del mundo, aunque ya sé que lo soy por tenerte a ti en mi vida.</p>
+<p>Me encanta lo tímido que te pones cada vez que te doy cumplidos, aunque sean 100% reales y te los diga cada día.</p>
+<p>El tono de tu voz cuando te levantas, así todo ronco, y yo digo: “Dios mío, qué bendición”.</p>
+<p>Tus ojitos cada vez que se llenan de lagrimitas porque te sientes muy querido es una de las acciones más dulces y lindas que puedan existir.</p>
+<p>Y la forma en que te muerdes el labio todo el rato cuando estamos hablando… dios mío, eso me desarma. 😭</p>
+<p>Cuando te me quedas mirando fijamente, a mí me tiembla todo.</p>
+<p>Pero sobre todo me gusta cómo me haces sentir. Me gusta sentir que puedo ser yo contigo. Me gusta tu manera de quererme, tu manera de escucharme, tu forma de aparecer en mis días.</p>
+<p>Me gustas tú. En tus detalles grandes y en los pequeñitos que probablemente ni siquiera sabes que estoy guardando.</p>
+<p class="signature">Tu cielito que se fija en todo. 🤍<br>Karla</p>`},
+10:{title:"Ábrelo cuando no puedas dormir",emoji:"🌙",content:`
+<p>Hola, amor.</p>
+<p>¿Todavía no puedes dormir? Ven, acuéstate.</p>
+<p>No tienes que hablar si no quieres. Solo me quedaré contigo todo el rato que quieras.</p>
+<p>¿Demasiado difícil dormir hoy? Puedes cerrar los ojitos tranquilo, que yo estaré vigilando todos tus demonios. Todo lo que pueda hacerte daño, yo lo mantendré alejado de ti.</p>
+<p>Y estaré aquí cuidando tu sueño, porque siempre te he dicho que cuando no puedas más yo estaré siempre asistiéndote.</p>
+<p>Entonces, si quieres estar un rato solo entre tú y yo, puedes cerrar los ojos y concentrarte y pensar que estoy contigo, que estoy justo a tu lado de la cama, dándote la mano y acariciándotela suavemente para que puedas dormir.</p>
+<p>O simplemente nos estamos mirando tranquilos hasta que te sientas cansado.</p>
+<p>Apartaré todo mal pensamiento que pueda surcar tu mente, porque ya por hoy tuviste suficiente.</p>
+<p>Así que no tienes que resolver nada esta noche. No tienes que pensar en mañana. Solo descansa.</p>
+<p>Imagíname cerquita de ti, tomándote la mano y diciéndote bajito: “Ya está, mi amor. Por hoy es suficiente. Puedes dormir”.</p>
+<p class="signature">Buenas noches, tesorito. 🤍<br>Karla</p>`},
+11:{title:"Ábrelo cuando quieras reír",emoji:"😂",content:`
+<p>Hoooooolaaaaaaa wapooo,</p>
+<p>Mmm, ¿recuerdas esa noche que nos quedamos jugando pares o nones? Estábamos demasiado sincronizados. Eso es el poder del amor 😔. Estoy 100% segura, buajajajaja.</p>
+<p>Y cuando la niña te escribió por Mobile Legends diciéndote que te casaras con ella y yo rabiando de los celos mientras tú solo te burlabas de mí… mmm, tan cruel que eres. 😔</p>
+<p>Así que toca sección de chistes muuuy buenos by tu novia linda :D. No cierres la carta por más malos que sean, pesado.</p>
+<p>— ¿Qué hace una abeja en el gimnasio?<br><strong>¡Zum-ba!</strong> 🐝</p>
+<p>— ¿Qué le dijo un techo a otro techo?<br><strong>Techo de menos.</strong> 😭</p>
+<p>— ¿Qué hace una vaca cuando sale el sol?<br><strong>Sombra.</strong> 🐄</p>
+<p>— ¿Cómo se despiden los químicos?<br><strong>Ácido un placer.</strong> 🧪</p>
+<p>— ¿Qué le dijo una iguana a su hermana gemela?<br><strong>Iguanita.</strong> 🦎</p>
+<p>— ¿Qué hace un pez?<br><strong>Nada.</strong> 🐟</p>
+<p>— ¿Cuál es el colmo de un electricista?<br><strong>Que su esposa se llame Luz y sus hijos le sigan la corriente.</strong> 😭</p>
+<p>Y si ninguno te dio risa, recuerda que mi amor por ti sí es un chiste… porque mira lo enamorada que estoy de ti. JAJAJA.</p>
+<p class="signature">Con cariño, tu comediante favorita.<br>Karla 🤍</p>`},
+12:{title:"Ábrelo cuando estés sobrepensando demasiado",emoji:"🧠",content:`
+<p>Hola mi niño,</p>
+<p>Si estás leyendo esto, probablemente tu cabeza decidió hacer horas extra otra vez.</p>
+<p>Así que primero: respira. No tienes que resolver cada pensamiento que aparece en tu cabeza.</p>
+<p>A veces la mente toma una pequeña duda y la convierte en una historia enorme. Y sé que cuando empiezas a sobrepensar puedes terminar sintiendo cosas que ni siquiera sabes cómo explicar.</p>
+<p>Pero quiero que recuerdes algo: <strong>un pensamiento no siempre es un hecho.</strong></p>
+<p>Si algo te preocupa, puedes hablar conmigo. No quiero que tengas que inventarte respuestas cuando puedes preguntarme. No quiero que te quedes solo con tus dudas cuando podemos sentarnos a entenderlas juntos.</p>
+<p>Y si hoy tu cabeza está demasiado ruidosa, vuelve a las cosas que sí sabes: te amo, estoy aquí, me importas y no tienes que ganarte mi cariño cada minuto.</p>
+<p>Piensa en nosotros, en nuestras llamadas, en las veces que hemos reído, en Petunia, en nuestros planes, en todas esas pequeñas cosas que existen de verdad.</p>
+<p>Ahora respira otra vez.</p>
+<p>Inhala despacito. Suelta los hombros. Y deja que por un momento el mundo espere.</p>
+<p>No tienes que tener todas las respuestas esta noche, tesorito. Mañana también existirá.</p>
+<p class="signature">Y si tu cabeza hace demasiado ruido, ven a mí.<br>Karla 🤍</p>`},
+13:{title:"Ábrelo cuando quieras mirar a través de mis ojos",emoji:"📸",content:`
+<p>Quiero enseñarte algo: todas estas cosas me recuerdan a ti.</p>
+<p>Porque estás escondido en muchísimos rincones de mi vida. En una canción, en el cielo, en un viaje que todavía no hemos hecho, en una comida que quiero cocinarte… y hasta en una pequeña Petunia.</p>
+<div class="polaroids">
+<div class="polaroid"><div class="photo">☁️<br>Foto del cielo</div><div class="caption">El cielo siempre será lo que más me recuerda a ti, aunque ningún día se va a poder comparar con lo lindo que eres tú.</div></div>
+<div class="polaroid"><div class="photo">🇨🇭<br>Foto de Suiza</div><div class="caption">Segundo destino: Suiza. Ya habremos viajado a Disney y conoceremos todos los lugares que alguna vez nos hayan interesado. Podremos viajar por el mundo juntos.</div></div>
+<div class="polaroid"><div class="photo">🎶<br>Foto de la canción</div><div class="caption">Cada vez que escucho canciones de amor tu nombre viene a mi cabeza, pero esta me hace sentir tan cerca de ti, porque yo estoy tan locamente enamorada de ti.</div></div>
+<div class="polaroid"><div class="photo">🫓<br>Foto de pupusas</div><div class="caption">Las famosas pupusas que algún día cocinaré para ti, junto a todo el repertorio de comida para poderte enamorar también el estómago buaajjajaja.</div></div>
+<div class="polaroid"><div class="photo">🧸<br>Foto de Petunia</div><div class="caption">Nuestra Petunia, nuestra bebé, que algún día se la daremos a nuestros futuros hijos. 🤍</div></div>
+<div class="polaroid"><div class="photo">💌<br>Collage de destacados</div><div class="caption">Tus mensajes destacados y me faltaron muchísimos más, pero sin duda ellos son el motivo y la razón de mi felicidad.</div></div>
+<div class="polaroid"><div class="photo">✈️<br>Foto del lugar de encuentro</div><div class="caption">Dentro de poco, nuestro lugar de encuentro. Donde finalmente sabré cómo se siente abrazarte y podré mirarte a los ojos.</div></div>
+<div class="polaroid"><div class="photo">🎨<br>Foto de tu dibujo</div><div class="caption">Me pasaría la vida dibujándote si pudiera. Eres mi musa, mi arte, eres el motivo por el cual volví a amar dibujar y no podría elegir mejor retrato.</div></div>
+</div>
+<p>Y todavía podría llenar muchísimas más polaroids, porque cada día aparece algo nuevo que me hace pensar en ti.</p>
+<p class="signature">Así te veo yo. 🤍<br>Karla</p>`},
+14:{title:"Ábrelo cuando dudes de ti mismo",emoji:"🥹",content:`
+<p>Hola hermoso,</p>
+<p>Primero que nada quiero que sepas que no existe nadie en este mundo que sea tan capaz como tú, absolutamente nadie.</p>
+<p>¿Cómo fuiste capaz de viajar a otro país desde tan joven y salir adelante? ¿Cómo trabajaste y estudiaste a la vez? ¿Cómo apoyaste a tu hermana cada vez que lo necesitaba, a pesar de que ella no siempre supiera valorarlo?</p>
+<p>La forma en que hablas de tus padres, de tu sobrino, de tus hermanos, la forma en que los amas, te hace ser una persona tan increíble.</p>
+<p>Y luego estás tú apoyándome en mi día a día. Cuando ni yo misma creo que pueda, tú siempre me dices que sí y haces que pueda avanzar y continuar.</p>
+<p>Entonces yo siempre estaré ahí para recordarte lo asombroso que eres. Cada día te levantas tan temprano para irte a trabajar, te esfuerzas todo el día, llegas a tu casa con una sonrisa a pesar de estar cansado y destruido… y eso te hace una persona asombrosa.</p>
+<p>Puede que vengan días grises y días en los que parezca que es demasiado, pero estoy segurísima y pondría la mano al fuego sabiendo que puedes con eso y muchísimo más.</p>
+<p>Y si algún día necesitas que alguien crea en ti por un rato, déjame hacerlo. Si necesitas descansar, descansa. Si necesitas llorar, llora. Si necesitas que te recuerde todo lo que has conseguido, aquí estaré.</p>
+<p>Te amo, cielo, y nunca me cansaré de decírtelo.</p>
+<p class="signature">Siempre orgullosa de ti,<br>Karla 🤍</p>`},
+15:{title:"Ábrelo cuando sientas que yo estuve distante ese día",emoji:"🤍",content:`
+<p>Hola cielo,</p>
+<p>Primero que todo discúlpame si fui una mala novia hoy. A veces ni yo me siento suficiente. A veces siento que las cosas son más grandes que yo, que mis sentimientos y pensamientos me ganan y no puedo continuar.</p>
+<p>A veces la cabeza me hace pasar un mal rato sobrepensando todo y no sé cómo digerirlo.</p>
+<p>Estoy tan acostumbrada a que las personas no me apoyen ni me ayuden que solo me cierro mentalmente y me creo una barrera, pero eso no significa que te quiera menos ni que te haya dejado de amar.</p>
+<p>No, mi amor. Al contrario. Contigo estoy aprendiendo a ser mejor novia, a mejorar como persona y aprendiendo de ti, de mí y de nosotros.</p>
+<p>Quiero saber todo de ti y quiero que tú sepas todo de mí. Quiero que avancemos y salgamos adelante juntos.</p>
+<p>Así que si soy un poco insoportable hoy, solo quiéreme como siempre y ámame como tal. Yo, poco a poco, aprenderé que no estoy tan sola, que tengo a alguien así de increíble como tú a mi lado.</p>
+<p>Y si alguna vez me notas distante, quiero que recuerdes que mi silencio puede significar que estoy intentando ordenar mi cabeza, no que mi corazón se haya alejado de ti.</p>
+<p class="signature">Gracias por tenerme paciencia.<br>Karla 🤍</p>`},
+16:{title:"Ábrelo cuando hayas leído todas las cartas",emoji:"💌",content:`
+<p><strong>Hola Daniel &lt;3</strong></p>
+<p>Si estás leyendo esto significa que llegaste hasta aquí.</p>
+<p>Leíste cada una de mis cartas, cada palabra que escribí pensando en ti, cada pequeño pedacito de mi corazón que decidí dejarte en esta página.</p>
+<p>Y ahora llegaste a la última. Creo que no me queda ningún lugar donde esconderte cuánto te amo.</p>
+<p>Así que esta vez no voy a decirte “ábrela cuando”. Esta vez simplemente quiero decirte <strong>gracias</strong>.</p>
+<p>Gracias por amarme en cada etapa, cada minuto de mi vida, aunque esté enojada, triste, feliz, eufórica o solamente coma galletas con mayonesa.</p>
+<p>Gracias por amarme tal y como soy, por nunca intentar cambiar mi forma de amarte, por aceptar todo mi amor aunque a veces soy demasiado intensa y babosa. Pero no hay otra forma de explicarte o expresarte lo mucho que importas y significas en mi vida.</p>
+<p>No sé si estás leyendo esta carta un mes después de enviarte la primera carta o un año después, pero quiero que sepas que cuando estés leyendo esto, no importa cuál sea la situación, te voy a seguir queriendo con la misma intensidad o más incluso que ahora.</p>
+<p>Así que, tesorito, gracias por escucharme y tomarte el tiempo de entenderme. Eres lo mejor que me ha pasado. Intentaré cuidarte todos los días de mi vida y estaré para ti cada momento de mi existencia.</p>
+<p>Todavía no hemos cumplido los 2 meses, ya ando haciendo la sorpresa, pero espero que duremos toda la vida. Hoy son 53 días, pero espero que el contador explote algún día porque no pueda con tantos días.</p>
+<p>Te amo Daniel con todo mi corazón. No tengo más palabras que regalarte que no las hayas escuchado antes y si necesitas que te las repita lo haré cada día.</p>
+<p><strong>Fin de las cartas. Pero no de nuestra historia. ♡</strong></p>
+<p class="signature">Tu cielito,<br>Karla 🤍</p>`}
 };
 
-const list = document.getElementById("lettersList");
-Object.entries(letters).forEach(([num, letter])=>{
-  const button=document.createElement("button");
-  button.className="letter-link";
-  button.innerHTML=`<span class="num">${num}.</span><span>${letter.emoji} ${letter.title}</span>`;
-  button.onclick=()=>openLetter(Number(num));
-  list.appendChild(button);
+const list=document.getElementById("lettersList");
+Object.entries(letters).forEach(([num,l])=>{
+ const b=document.createElement("button"); b.className="letter-link"; b.disabled=true;
+ b.innerHTML=`<span class="num">${num}.</span><span>${l.emoji} ${l.title}<br><span class="small">🔒 Cerrada — pide el enlace</span></span>`;
+ list.appendChild(b);
 });
-
-function show(id){
-  document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));
-  document.getElementById(id).classList.add("active");
-  window.scrollTo({top:0,behavior:"instant"});
+function show(id){document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));document.getElementById(id).classList.add("active");window.scrollTo(0,0)}
+function openLetter(n){
+ const l=letters[n]; if(!l)return;
+ document.getElementById("letterNumber").textContent=`Carta ${n}`;
+ document.getElementById("letterEyebrow").textContent=l.emoji;
+ document.getElementById("letterTitle").textContent=l.title;
+ document.getElementById("letterContent").innerHTML=l.content;
+ show("letter");
 }
-
-function openLetter(num){
-  const letter=letters[num];
-  if(!letter)return;
-  document.getElementById("letterNumber").textContent=`Carta ${num}`;
-  document.getElementById("letterEyebrow").textContent=letter.emoji;
-  document.getElementById("letterTitle").textContent=letter.title;
-  document.getElementById("letterContent").innerHTML=letter.content;
-  show("letter");
-}
-
-/* Enlaces directos:
-   index.html?carta=1 ... index.html?carta=16
-   La carta especial sigue siendo accesible directamente desde el listado.
-*/
-const params=new URLSearchParams(location.search);
-const direct=params.get("carta");
-if(direct && letters[direct]){
-  openLetter(Number(direct));
-}
+const p=new URLSearchParams(location.search);
+const direct=p.get("carta") || (location.hash.startsWith("#carta=")?location.hash.split("=")[1]:null);
+if(direct && letters[direct]) openLetter(Number(direct));
 </script>
 </body>
 </html>
